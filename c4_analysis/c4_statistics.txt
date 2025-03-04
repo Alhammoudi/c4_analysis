@@ -1,0 +1,103 @@
+Total Lines of Code (LOC)
+Entire Program: 612 LOC
+Function next: 88 LOC
+Function expr: 176 LOC
+Function stmt: 52 LOC
+Function main: 238 LOC
+Average Function Size: 139 LOC
+Cyclomatic Complexity (Measures Code Complexity)
+next() → 27
+expr() → 57
+stmt() → 8
+main() → 55
+Function Count and Size
+Total Number of Functions: 4
+Breakdown:
+next: 88 LOC
+expr: 176 LOC
+stmt: 52 LOC
+main: 238 LOC
+Global Variables and Their Usage
+Total Global Variables: 14
+
+Variable	Description
+p	Tracks current position in source code while scanning.
+lp	Stores the last processed line for debugging.
+data	Manages the data section of the program.
+e	Keeps track of emitted instructions during code generation.
+le	Pointer to the last emitted instruction, useful for debugging.
+id	Stores the currently parsed identifier in the symbol table.
+sym	Points to the symbol table (stores identifiers, functions, variables).
+tk	Stores the current token type during lexical analysis.
+ival	Holds the numerical value of tokens when parsing literals.
+ty	Tracks the type of the currently evaluated expression.
+loc	Keeps track of local variable offsets in function stacks.
+line	Monitors line numbers for debugging and error reporting.
+src	Debugging flag for printing source and assembly code.
+debug	Flag for enabling runtime debugging output.
+Unique Tokens and Frequency
+Total Unique Tokens: 36
+
+Token	Frequency
+Num	8
+Fun	3
+Sys	3
+Glo	3
+Loc	7
+Id	7
+Char	8
+Else	2
+Enum	2
+If	2
+Int	8
+Return	2
+Sizeof	2
+While	3
+Assign	13
+Cond	4
+Lor	3
+Lan	4
+Or	3
+Xor	4
+And	3
+Eq	4
+Ne	3
+Lt	3
+Gt	3
+Le	3
+Ge	3
+Shl	3
+Shr	3
+Add	6
+Sub	8
+Mul	11
+Div	4
+Mod	3
+Inc	18
+Dec	4
+Brak	3
+Branches, Loops, and Nesting Levels
+Branching Statements:
+if statements: 12
+else blocks: 7
+Max nesting depth: 3 levels
+Looping Structures:
+while loops: 5
+Max loop nesting depth: 2 levels
+No switch or for loops in the program.
+Memory Usage Patterns
+Memory is allocated dynamically across three key areas:
+
+Stack:
+
+Stores function call frames.
+Holds local variables.
+Maintains VM execution state.
+Heap:
+
+Stores the symbol table (functions, variables).
+Allocates compiled code dynamically.
+Manages runtime data sections.
+Global Data:
+
+Used for tracking program state (e.g., parsing and execution variables).
